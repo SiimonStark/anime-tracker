@@ -5,7 +5,7 @@ function AnimeCard({ anime }) {
         <article className="anime-card">
             <a href={anime.url} target="_blank">
                 <figure>
-                    <img src={anime.image_url} alt={'Cover art for ' + anime.name} />
+                    <LazyImg name={anime.name} imgSrc={anime.image_url} />
                 </figure>
                 <h3>{anime.title}</h3>
             </a>
